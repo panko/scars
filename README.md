@@ -10,3 +10,25 @@ The speed in km/h shall be available to the system as an integer value.
 
 ## Source
 https://www.youtube.com/watch?v=lqX6k4I-qAw
+
+## Example
+```
+prike@xamito:~/scars/scars$ ./scars.py 
+Usage: ./scars.py <input number>
+prike@xamito:~/scars/scars$ ./scars.py asd
+Usage: ./scars.py <input number>; where the input is an integer
+prike@xamito:~/scars/scars$ ./scars.py 1
+nothing
+prike@xamito:~/scars/scars$ ./scars.py 50
+warning
+prike@xamito:~/scars/scars$ ./scars.py 55
+warning
+prike@xamito:~/scars/scars$ ./scars.py 56
+fine
+prike@xamito:~/scars/scars$ ./scars.py 60
+fine
+prike@xamito:~/scars/scars$ ./scars.py 61
+license_suspended
+prike@xamito:~/scars/scars$ ./scars.py -69
+nothing
+```
